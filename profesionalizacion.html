@@ -15,25 +15,27 @@
 			<h1>Tienda</h1>
 
 			<div class="container-icon">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="icon-cart"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-					/>
-				</svg>
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
 				<div class="count-products">
 					<span id="contador-productos">0</span>
 				</div>
-
-				<div class="container-cart-products hidden-cart">
+			</div>
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product hidden">
 					<div class="cart-product">
 						<div class="info-cart-product">
                             <span class="cantidad-producto-carrito">1</span>
@@ -55,52 +57,57 @@
 							/>
 						</svg>
 					</div>
-                    <div class="cart-total">
-                        <h3>Total:</h3>
+				</div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
                         <span class="total-pagar">$200</span>
-                    </div>
-				</div>
+                </div>
+				<p class="cart-empty">El carrito esta vacio</p>
 			</div>
-		</header>
-		<div class="container-items">
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1593118247619-e2d6f056869e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-						alt="producto"
+		</div>
+	</header>
+	<div class="container-items">
+		<div class="item">
+			<figure>
+				<img
+					src="https://th.bing.com/th/id/R.aa1856d78967594ea7649d9ff736a0e9?rik=32HZVQineeqXhQ&pid=ImgRaw&r=0"
+					alt="producto"
+				/>
+			</figure>
+			<div class="info-product">
+				<h2>Celular</h2>
+				<p class="price">$4371</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img
+					src="https://th.bing.com/th/id/R.6b0a327ec80882f85247a473bf1bf85e?rik=2Aw%2fi%2b21r17Fow&riu=http%3a%2f%2fs3-eu-west-1.amazonaws.com%2frankia%2fimages%2fvaloraciones%2f0017%2f1391%2fcomputadora-mexico.png%3f1413792133&ehk=PvuhobOmIEF5wadUc0qeZ55gr1U3%2bV9AZ%2fiKgXidNME%3d&risl=&pid=ImgRaw&r=0"
+					alt="producto"
+				/>
+			</figure>
+			<div class="info-product">
+				<h2>Computadora</h2>
+				<p class="price">$1500</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img
+					src="https://th.bing.com/th/id/R.68f0b55351b6c73b2506e0727eed472e?rik=4m0NEYNleQKifQ&pid=ImgRaw&r=0"
+					alt="producto"
 					/>
 				</figure>
 				<div class="info-product">
-					<h2>Mando</h2>
-					<p class="price">$500</p>
-					<button>Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1696621629216-dfed30d4427d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Consola de mano</h2>
-					<p class="price">$750</p>
-					<button>Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="https://images.unsplash.com/photo-1486401899868-0e435ed85128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Consola de casa</h2>
-					<p class="price">$1000</p>
-					<button>Añadir al carrito</button>
+					<h2>Laptops</h2>
+					<p class="price">$3299</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
 				</div>
 			</div>
 		</div>
+		<script src="index.js"></script>
 	</body>
 </html>
